@@ -13,17 +13,8 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-package models.ticket
+package models.users
 
-import models.meta.MetaData
-import models.state.State
-import models.users.User
+trait User {
 
-trait Ticket {
-  val id: Long
-  val assignee: Option[User]
-  val state: State
-  val tags: Seq[Tag]
-  val subTickets: Seq[Ticket]
-  val metaData: MetaData
 }

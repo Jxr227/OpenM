@@ -15,15 +15,6 @@
 */
 package models.ticket
 
-import models.meta.MetaData
-import models.state.State
-import models.users.User
+trait Tag {
 
-trait Ticket {
-  val id: Long
-  val assignee: Option[User]
-  val state: State
-  val tags: Seq[Tag]
-  val subTickets: Seq[Ticket]
-  val metaData: MetaData
 }
