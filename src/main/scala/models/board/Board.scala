@@ -16,11 +16,9 @@
 package models.board
 
 import models.ticket.Ticket
-import models.users.Team
 
 trait Board {
   val id: Long
-  val teams: List[Team]
   val tickets: Seq[Ticket]
   val columns: Seq[Column]
 }

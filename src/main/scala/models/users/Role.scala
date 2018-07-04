@@ -15,6 +15,6 @@
 */
 package models.users
 
-trait User {
-  val role: Role
+trait Role {
+
 }

@@ -15,6 +15,7 @@
 */
 package models.users
 
-trait User {
-  val role: Role
+trait Organisation {
+  val name: String
+  val teams: Seq[Team]
 }

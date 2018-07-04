@@ -15,7 +15,10 @@
 */
 package models.users
 
+import models.board.Board
+
 trait Team {
   val users: Seq[User]
+  val boards: Seq[Board]
 
 }
