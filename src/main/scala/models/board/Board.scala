@@ -22,4 +22,5 @@ trait Board {
   val id: Long
   val teams: List[Team]
   val tickets: Seq[Ticket]
+  val columns: Seq[Column]
 }

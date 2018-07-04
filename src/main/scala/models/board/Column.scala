@@ -13,9 +13,12 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-package models.users
+package models.board
 
-trait Team {
-  val users: Seq[User]
+import models.ticket.Ticket
 
+trait Column {
+  val title: String
+  val order: Int
+  val tickets: Seq[Ticket]
 }
